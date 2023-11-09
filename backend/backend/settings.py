@@ -17,7 +17,7 @@ sentry_sdk.init(
     send_default_pii=True
 ) 
 
-SECRET_KEY = os.getenv('TOKEN')
+SECRET_KEY = os.getenv('SECRET_KEY ')
 
 DEBUG = False
 
