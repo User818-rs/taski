@@ -7,7 +7,6 @@ router = routers.DefaultRouter()
 router.register('tasks', views.TaskView, 'task')
 
 urlpatterns = [
-    path('sentry-debug/'),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
 ]
