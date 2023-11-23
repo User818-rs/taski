@@ -8,14 +8,13 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 sentry_sdk.init(
-  
     dsn="https://efda41333dda21212607d1943b9f3b03@o4506150328795136.ingest.sentry.io/4506150333120512",
     integrations=[
         DjangoIntegration(),
     ],
     traces_sample_rate=1.0,
     send_default_pii=True
-) 
+)
 
 SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^'
 
@@ -140,4 +139,4 @@ REST_FRAMEWORK = {
     ]
 }
 
-ALLOWED_HOSTS = ['158.160.29.228', '127.0.0.1', 'localhost','http://advaqwerty.hopto.org/']
+ALLOWED_HOSTS = ['158.160.29.228', '127.0.0.1', 'localhost', 'http://advaqwerty.hopto.org/']
