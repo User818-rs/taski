@@ -1,9 +1,9 @@
-import os
 from pathlib import Path
 
 import sentry_sdk
-from dotenv import load_dotenv
 from sentry_sdk.integrations.django import DjangoIntegration
+import os
+from dotenv import load_dotenv
 
 load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
